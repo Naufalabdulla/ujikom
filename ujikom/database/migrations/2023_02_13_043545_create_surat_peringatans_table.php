@@ -15,6 +15,7 @@ class CreateSuratPeringatansTable extends Migration
     {
         Schema::create('surat_peringatans', function (Blueprint $table) {
             $table->id();
+            $table->integer('type');
             $table->timestamps();
         });
     }
